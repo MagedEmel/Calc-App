@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: bold;
+}
+body {
+  background-color: #ededed;
+}
+.container {
+  width: 25%;
+  height: 75vh;
+  margin: auto auto;
+  background-color: #fff;
+  margin-top: 50px;
+  border-radius: 30px;
+}
+.calc .numbers .nums button {
+  background-color: #4caf50;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 3px 2px 5px;
+  width: 70px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 1s all;
+}
+.ope div .button {
+  background-color: #4caf50;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 3px 2px 5px;
+  width: 70px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 1s all;
+}
+.ope div .button.operator:hover {
+  background-color: #4caf50;
+}
+.calc .numbers button:hover {
+  background-color: #4aff00;
+  scale: 1.1;
+}
+.ope div .button.operator {
+  background-color: #ff7043;
+}
+.rest button {
+  display: block;
+  height: 60px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 3px 2px 5px;
+  width: 60%;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: #ff7043;
+  transition: 1s all;
+}
+.rest button:hover {
+  background-color: #ffa054;
+  scale: 1.1;
+}
+#display {
+  width: 80%;
+  height: 80px;
+  background-color: #333;
+  margin: 30px auto;
+  position: relative;
+  top: 20px;
+  border-radius: 15px;
+  text-align: right;
+  font-size: 25px;
+  color: #fff;
+  padding: 40px 20px 0 0;
+}
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: end;
+}
+.ope div .button.operator {
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 3px 2px 5px;
+  width: 70px;
+  font-size: 20px;
+  background-color: #6be970;
+  cursor: pointer;
+  transition: 1s all;
+}
+.opertopr div button {
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 3px 2px 5px;
+  width: 70px;
+  font-size: 20px;
+  background-color: #6be970;
+  cursor: pointer;
+  transition: 1s all;
+}
+.opertopr div button.equal {
+  width: 150px;
+  text-align: center;
+  padding-left: 40%;
+}
+.opertopr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.equal {
+  margin: 10px auto;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 3px 2px 5px;
+  width: 70px;
+  font-size: 20px;
+  background-color: #6be970;
+  width: 80%;
+  justify-content: left;
+  display: flex;
+  padding-left: 40%;
+  cursor: pointer;
+  transition: 1s all;
+}
+.equal:hover,
+.opertopr div button:hover {
+  background-color: #4caf50;
+  scale: 1.1;
+}
+
+@media (max-width: 1450px) {
+  .container {
+    width: 30%;
+    height: 80%;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 38%;
+  }
+  .rest button {
+    margin: 30px auto;
+  }
+}
+@media (max-width: 950px) {
+  .container {
+    height: 80%;
+    width: 40%;
+  }
+  .calc .numbers button {
+    width: 50px;
+  }
+  .ope div .button.operator {
+    width: 50px;
+  }
+  .opertopr div button {
+    width: 50px;
+  }
+}
+@media (max-width: 780px) {
+  .opertopr div button.equal {
+    width: 120px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    width: 45%;
+  }
+  .calc .numbers button {
+    width: 40px;
+    font-size: 20px;
+    padding-left: 15px;
+  }
+  .ope div .button.operator {
+    width: 40px;
+  }
+  .opertopr div button {
+    width: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 70%;
+  }
+}
